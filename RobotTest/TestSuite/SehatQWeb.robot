@@ -20,8 +20,8 @@ RegistrasiTestN1
     Open Browser       ${registrasion}    chrome
     SeleniumLibrary.Maximize Browser Window
     Sleep              5
-    Input Text         id=name    M
-    Input Text         id=email    panjaitanmelissa95@gmail.com
+    Input Text         id=name    Yohana
+    Input Text         id=email    yohanalubis@gmail.com
     Input Password     ${passwordR}   ber
     Click Element      xpath=//*[contains(text(),'Saya menyetujui')]
     Click Button       xpath=//button[contains(text(),'Daftar')]
@@ -34,8 +34,8 @@ RegistrasiTestN2
     Open Browser    ${registrasion}    chrome
     SeleniumLibrary.Maximize Browser Window
     Sleep    5
-    Input Text     id=name    M
-    Input Text     id=email    panjaitanmelissa95@
+    Input Text     id=name    Yohana
+    Input Text     id=email    yohanalubis16@
     Input Password    ${passwordR}    berkembang1
     Click Element    xpath=//*[contains(text(),'Saya menyetujui')]
     Click Element    xpath=//button[contains(text(),'Daftar')]
@@ -47,7 +47,7 @@ RegistrasiTestN3
     Open Browser    ${registrasion}    chrome
     SeleniumLibrary.Maximize Browser Window
     Sleep    5
-    Input Text     id=name    M
+    Input Text     id=name    Yohana
     Input Text     id=email    panjaitanmelissa95
     Input Password    ${passwordR}    ber
     Click Element    xpath=//*[contains(text(),'Saya menyetujui')]
@@ -61,9 +61,9 @@ RegistrasiTest
     Open Browser    ${registrasion}    chrome
     SeleniumLibrary.Maximize Browser Window
     Sleep    5
-    Input Text     id=name    M
-    Input Text     id=email    panjaitanmelissa95@
-    Input Password    ${passwordR}    berkembang1
+    Input Text     id=name    Yohana
+    Input Text     id=email    yohanalubis@gmail.com
+    Input Password    ${passwordR}    yohana1234
     Click Element    xpath=//*[contains(text(),'Saya menyetujui')]
     Click Element    xpath=//button[contains(text(),'Daftar')]
     Sleep    5
@@ -89,9 +89,8 @@ LoginTestN11
     # Input Text     id=email      
     Input Password    ${passwordL}    berkembang1
     Click Element    ${login}
-    # Check Element    xpath=//*[@id="__next"]/div/div/div/div/div[2]/div/form/div[1]/div/div
     Sleep    5
-    # Close Browser
+    Close Browser
     Log    Test SelesaiLoginTest
     
 LoginTestN2
